@@ -34,7 +34,7 @@ export default function WarthogStore() {
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-2">
               <Store className="w-8 h-8 text-blue-600" />
-              <h1 className="text-3xl font-black tracking-tighter">WART<span className="text-blue-600">SHOP</span></h1>
+              <h1 className="text-3xl font-black tracking-tighter">ALBANIA<span className="text-blue-600">SHOP</span></h1>
             </div>
             
             <nav className="hidden md:flex gap-6 italic font-bold text-black">

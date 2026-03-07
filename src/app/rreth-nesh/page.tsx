@@ -13,7 +13,7 @@ export default function AboutPage() {
         <div className="flex justify-between items-center border-b pb-6">
           <div className="flex items-center gap-2">
             <Store className="w-8 h-8 text-blue-600" />
-            <h1 className="text-3xl font-black tracking-tighter">WART<span className="text-blue-600">SHOP</span></h1>
+            <h1 className="text-3xl font-black tracking-tighter">Albania<span className="text-blue-600">SHOP</span></h1>
           </div>
           <Link href="/">
             <Button variant="outline" className="gap-2">
