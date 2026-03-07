@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, type HTMLMotionProps, type AnimationProps } from "framer-motion";
+import { motion, type HTMLMotionProps } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 interface ShinyButtonProps extends HTMLMotionProps<"button"> {
@@ -8,13 +8,13 @@ interface ShinyButtonProps extends HTMLMotionProps<"button"> {
   className?: string;
 }
 
-const animationProps: AnimationProps = {
+const animationProps = {
   initial: { "--x": "100%", scale: 0.95 },
   animate: { "--x": "-100%", scale: 1 },
   whileTap: { scale: 0.95 },
   transition: {
     repeat: Infinity,
-    repeatType: "loop",
+    repeatType: "loop" as const,
     repeatDelay: 1,
     type: "spring",
     stiffness: 20,
@@ -36,7 +36,7 @@ const ShinyButton = ({ children, className, ...props }: ShinyButtonProps) => {
       {...props}
       className={cn(
         "relative rounded-full px-6 py-2 font-medium backdrop-blur-xl transition-shadow duration-300 ease-in-out hover:shadow dark:bg-[rgba(255,255,255,0.1)] dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.1)]",
-        "bg-[#0071e3] text-white", // Ngjyra Apple Blue
+        "bg-[#0071e3] text-white", 
         className,
       )}
     >
